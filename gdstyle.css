@@ -1,0 +1,43 @@
+body{
+    background-color: aquamarine;
+}
+.layout{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas:
+    "h h h h h"
+    "sb1 m m m sb2"
+    "f f f f f";
+}
+.layout div{
+    display:grid;
+    border:1px dashed black;
+    justify-content: center;
+    justify-items: center;
+    align-items:center;
+    text-transform: capitalize;
+    color:antiquewhite;
+    background-color: brown;
+    font-style: oblique;
+}
+.header
+{
+    grid-area: h;
+}
+.scrollbar1
+{
+    grid-area: sb1;
+}
+.main
+{
+    grid-area: m;
+}
+.scrollbar2
+{
+    grid-area: sb2;
+}
+.footer
+{
+    grid-area: f;
+}
